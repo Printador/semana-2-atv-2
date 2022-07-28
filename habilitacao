@@ -1,0 +1,22 @@
+rodas = int(input('Quantas rodas tem seu veículo?: '))
+peso = int(input('Qual o peso do seu veículo?: '))
+passageiros = int(input('Quantos passageiros cabem no seu veículo?: '))
+
+print('Seu veículo tem', rodas, 'rodas.')
+print('Seu veículo pesa', peso, 'kg.')
+print('Cabem', passageiros, 'pessoas no seu veículo.')
+
+if rodas == 1:
+    print('Opção inválida')
+elif rodas == 2:
+    print('Habilitação categoria A')
+elif rodas == 3:
+    print('Habilitação categoria A')
+elif (rodas == 4 and passageiros <= 8 and peso <= 3500):
+    print('Habilitação categoria B')
+elif (rodas >=4 and 3500 <= peso <= 6000):
+    print('Habilitação categoria C')
+elif (rodas >= 4 and passageiros >= 9):
+    print('Habilitação categoria D')
+elif (rodas >= 4 and peso >= 6000):
+    print('Habilitação categoria E')
